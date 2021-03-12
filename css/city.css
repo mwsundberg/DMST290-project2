@@ -1,5 +1,5 @@
 /* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;800&family=PT+Serif');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;800&family=PT+Serif:ital,wght@0,400;1,700');
 
 /* colors */
 :root {
@@ -12,6 +12,10 @@
 	--heading-color: #f99a34;
 	--secondary-heading-color: #af2f4d;
 	--copy-text-color: #2b1103;
+	--sans-font: 300 1em 'Inter', sans-serif;
+	--sans-bold-font: 800 1em 'Inter', sans-serif;
+	--serif-font: 400 1em 'PT Serif', serif;
+	--serif-bold-font: italic 700 1em 'PT Serif', serif;
 }
 
 /* resets */
@@ -30,14 +34,13 @@ body {
 	color: var(--copy-text-color);
 	font-size: 16px;
 	line-height: 1.75;
-	font-family: 'PT Serif', serif;
+	font: var(--serif-font);
 }
 
 /* general text stuff */
 h1, h2, h3 {
 	color: var(--heading-color);
-	font-family: 'Inter', sans-serif;
-	font-weight: 800;
+	font: var(--sans-bold-font);
 }
 h1 {
 	font-size: 4rem;
@@ -68,3 +71,13 @@ a:hover {
 }
 
 /* layout */
+
+
+/* header */
+header nav {
+	font: var(--sans-font);
+}
+
+header nav .active {
+	font: var(--sans-bold-font);
+}
