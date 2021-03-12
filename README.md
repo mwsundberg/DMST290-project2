@@ -13,5 +13,5 @@
 - Standardized and fixed CSS classes and some of the tag structure on every page
 - Wrote all CSS from scratch
 - Added mobile layout support including gradual CSS grid scaling at widths best for readability
-- Added active page indicators and customized titles per-page
+- Added current page highlighter and customized titles per-page
 
