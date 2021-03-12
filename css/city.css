@@ -139,6 +139,12 @@ nav .active {
 	font-weight: 800;
 }
 
+/* footer */
+footer {
+	text-align: center;
+	padding: 2rem;
+}
+
 /* layout */
 .container {
 	padding: 3rem 0;
