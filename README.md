@@ -12,6 +12,7 @@
 - Adapted demographics section content for every page
 - Standardized and fixed CSS classes and some of the tag structure on every page
 - Wrote all CSS from scratch
+- Developed complimentary colors design scheme and paired fonts
 - Added mobile layout support including gradual CSS grid scaling at widths best for readability
 - Added current page highlighter and customized titles per-page
 
