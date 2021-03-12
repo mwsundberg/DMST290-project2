@@ -6,7 +6,7 @@
 	--background-color: #f7f5f2;
 	--inset-background-color: #632A3E;
 	--inset-highlight-color: #e8b9c4;
-	--inset-text-color: #efece8;
+	--inset-text-color: #efd9bd;
 	--link-color: #893A55;
 	--link-hover-color: #AF4A6D;
 	--heading-color: #f99a34;
@@ -37,15 +37,18 @@ body {
 
 /* general text stuff */
 h1, h2, h3 {
+	margin: 0;
+	margin-top: 1em;
 	color: var(--heading-color);
 	font-family: var(--sans-font);
 	font-weight: 800;
+	clear: both;
 }
 h1 {
 	font-size: 4rem;
 }
 h2 {
-	font-size: 2rem;
+	font-size: 3rem;
 }
 h3 {
 	color: var(--secondary-heading-color);
@@ -70,20 +73,15 @@ a:hover {
 	color: var(--inset-highlight-color);
 }
 
-/* layout */
-
-
 /* header */
 header {
 	padding: 3rem;
 	padding-bottom: 0;
-	margin-bottom: 4rem;
+	margin: 0;
 }
 
 header h1 {
-	margin: 0;
-	margin-bottom: -1rem;
-	margin-top: -1rem;
+	margin: -1rem 0;
 }
 
 .city-title {
@@ -120,4 +118,45 @@ nav li {
 
 nav .active {
 	font-weight: 800;
+}
+
+/* layout */
+.container {
+	padding: 3rem 0;
+	display: grid;
+	grid-template-columns: 1fr min(128ch, calc(100% - 64px)) 1fr;
+	grid-column-gap: 32px;
+}
+.container > * {
+  grid-column: 2;
+}
+
+/* general layout stuff */
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.two-fifths {
+	width: 40%;
+}
+
+/* specific things */
+.demographics {
+	display: grid;
+	grid-template-columns: 1.5fr 1fr;
+	grid-column-gap: 32px;
+}
+
+table, td {
+	border-collapse: collapse;
+	border: 3px solid var(--inset-background-color);
+	font-family: var(--sans-font);
+	padding: 0.5rem;
+}
+
+tr:nth-child(odd) {
+  background-color: var(--inset-text-color);
+  font-weight: 800;
 }
