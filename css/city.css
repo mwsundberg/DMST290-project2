@@ -37,7 +37,7 @@ body {
 
 /* general text stuff */
 h1, h2, h3 {
-	margin: 0;
+	margin-bottom: 0;
 	margin-top: 1em;
 	color: var(--heading-color);
 	font-family: var(--sans-font);
@@ -49,6 +49,7 @@ h1 {
 }
 h2 {
 	font-size: 3rem;
+	border-bottom: 5px dashed var(--inset-highlight-color);
 }
 h3 {
 	color: var(--secondary-heading-color);
@@ -62,6 +63,22 @@ a {
 a:hover {
 	text-decoration: underline;
 	color: var(--link-hover-color);
+}
+
+table, td {
+	border-collapse: collapse;
+	border: 3px solid var(--inset-background-color);
+	font-family: var(--sans-font);
+	padding: 0.5rem;
+}
+
+tr:nth-child(odd) {
+  background-color: var(--inset-text-color);
+  font-weight: 800;
+}
+
+img {
+	margin: 1rem;
 }
 
 .inset {
@@ -147,16 +164,4 @@ nav .active {
 	display: grid;
 	grid-template-columns: 1.5fr 1fr;
 	grid-column-gap: 32px;
-}
-
-table, td {
-	border-collapse: collapse;
-	border: 3px solid var(--inset-background-color);
-	font-family: var(--sans-font);
-	padding: 0.5rem;
-}
-
-tr:nth-child(odd) {
-  background-color: var(--inset-text-color);
-  font-weight: 800;
 }
