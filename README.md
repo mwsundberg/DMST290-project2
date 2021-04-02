@@ -1,25 +1,21 @@
-# DMS290-Project1
+# DMS290-Project2
 
-## Vikram - Information Architect
-1) New Orleans has the scaffolding per information architecture chosen.
-2) Visual design should be updated per visual designer's recommendations.
-3) Other three cities are drafts based on New Orleans.  They must be updated with the content from DMS 290 - Assignment 03 (rochester.edu) and additional content from the web.
-
-## Matthew - Visual Designer 
-
-- Adapted all content on Giza page
-- Adapted demographics section content for every page
-- Standardized and fixed CSS classes and some of the tag structure on every page
-- Wrote all CSS from scratch
-- Developed complimentary colors design scheme and paired fonts
-- Added mobile layout support including gradual CSS grid scaling at widths best for readability
-- Added current page highlighter and customized titles per-page
-
-## Technician - Brian Jesse Kimani
-
- - populated obrursel and Fuzhou with info
- - Verified code structure
- - Setup git repo
- - Publlished the website with FTP
+## Tasheem - Visual Designer 
+ - Wrote the majority of the Halfway Report
+     - Picked fonts
+     - Designed site layouts
+     - Made wireframes
 
 
+## Matthew - Information Architect, Technician
+ - All of the original CSS
+ - Implemented the layout for city pages
+   - Restructured page contents
+   - Used CSS grid with coordination in subgrids
+ - Created index page
+   - All HTML and content
+   - Layout CSS
+ - Fixed site-wide header HTML organization
+ - Fixed organization of city page contents with headers and subdivisions
+ - Made logo to fill space
+ - Hosted site, etc.
