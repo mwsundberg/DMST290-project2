@@ -52,10 +52,6 @@ h2 {
 	font-size: 3rem;
 	border-bottom: 5px dashed var(--inset-highlight-color);
 }
-h3 {
-	color: var(--secondary-heading-color);
-	font-size: 1.25rem;
-}
 
 a {
 	text-decoration: none;
@@ -121,12 +117,21 @@ footer {
 		"hero hero"
 		"side action";
 	grid-template-columns: 2fr 1fr;
-	grid-template-rows: max-content 3rem;
+	grid-template-rows: 60vh 1fr;
 }
 .full-hero {
 	grid-area: hero;
 	width: 100%;
 	object-fit: cover;
+	height: 100%;
+}
+.boring-area {
+	grid-area: side;
+}
+
+/* CTA button */
+.call-to-action {
+	grid-area: action;
 }
 
 
