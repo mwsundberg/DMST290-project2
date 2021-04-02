@@ -37,7 +37,7 @@ body {
 
 /* general text stuff */
 h1, h2, h3 {
-	margin-bottom: 0;
+	margin: 0;
 	margin-top: 1em;
 	color: var(--heading-color);
 	font-family: var(--sans-font);
@@ -102,20 +102,17 @@ header h1 {
 	margin: 0;
 }
 
-.city-title {
+.center-nav h1 {
 	color: var(--inset-highlight-color);
 	font-weight: 300;
-	padding-left: 11rem;
+	display: inline-block;
 }
 
-.header-img {
+.center-nav img {
 	width: 10rem;
 	height: 10rem;
 	object-fit: cover;
 	clip-path: circle(at center);
-	position: absolute;
-	transform: translateY(-7.75rem);
-	left: 2rem;
 }
 
 
@@ -147,39 +144,37 @@ footer {
 
 /* layout */
 .container {
+	width: 100%;
 	padding: 3rem 0;
 	display: grid;
-	grid-template-columns: 1fr min(128ch, calc(100% - 64px)) 1fr;
-	grid-column-gap: 32px;
+	grid-template-columns: [main-start] 1fr [left-margin] 28ch [content-start] min(100ch, calc(100% - 64px)) [content-end] 1fr [main-end];
 }
 .container > * {
-  grid-column: 2;
-}
-
-/* general layout stuff */
-.left {
-	float: left;
-	margin-left: 0;
-}
-.right {
-	float: right;
-	margin-right: 0;
-}
-.two-fifths {
-	width: 40%;
-}
-
-/* specific things */
-.demographics {
-	margin-top: 2rem;
 	display: grid;
-	grid-template-columns: 2fr 1fr;
-	grid-column-gap: 32px;
+	grid-template-columns: subgrid;
+	grid-column-start: main-start;
+	grid-column-end: main-end;
 }
-.demographics-left {
+.container section h2 {
+	grid-column-start: content-start;
+  grid-column-end: content-end;
+}
+.container section .row {
+	grid-column-start: left-margin;
+  grid-column-end: content-end;
+  display: grid;
+  grid-template-columns: 28ch 2fr 5fr;
+  grid-gap: 1rem;
+}
+.row h3 {
+	text-align: right;
+}
+.row img {
 	width: 100%;
 	margin: 0;
+	margin-top: 1rem;
 }
+
 
 /* mobile */
 @media screen and (max-width: calc(100ch)) {
