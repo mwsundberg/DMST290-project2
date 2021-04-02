@@ -107,6 +107,10 @@ header > * {
 	display: inline-block;
 }
 
+.center-nav {
+	display: block;
+}
+
 .center-nav h1 {
 	color: var(--inset-highlight-color);
 	font-weight: 300;
