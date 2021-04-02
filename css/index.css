@@ -81,28 +81,32 @@ img {
 
 /* header */
 header {
-	padding: 3rem;
+	padding: 1rem;
 	padding-bottom: 0.5rem;
 	margin: 0;
 }
 
 header h1 {
 	margin: 0;
+	display: inline-block;
 }
 
-
-/* header > nav */
-nav ol {
-	padding-left: 11.3rem;
-	margin: 0;
+header > * {
+	display: inline-block;
 }
 
-header.inset nav a {
+/* header > .right-nav */
+.right-nav {
+	display: inline-block;
+	float: right;
+}
+
+.right-nav a {
 	color: var(--inset-text-color);
 	font-size: 1.25rem;
 }
 
-nav li {
+.right-nav li {
 	display: inline-block;
 	margin-right: 2rem;
 }
