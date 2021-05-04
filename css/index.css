@@ -87,6 +87,13 @@ header > * {
 	display: inline-block;
 }
 
+a.left-nav {
+	text-decoration: none;
+}
+.logo {
+	height: 3rem;
+}
+
 /* header > .right-nav */
 .right-nav {
 	display: inline-block;
@@ -132,6 +139,14 @@ footer {
 /* CTA button */
 .call-to-action {
 	grid-area: action;
+	background-color: var(--heading-color);
+	color: white;
+	margin: 1rem;
+	text-align: center;
+	font-family: var(--sans-font);
+	border-radius: 4rem;
+	font-size: 4rem;
+	padding-top: 3.5rem;
 }
 
 

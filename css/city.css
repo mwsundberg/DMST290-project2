@@ -109,11 +109,14 @@ header > * {
 
 .center-nav {
 	display: block;
+	padding-left: 30%;
 }
 
 .center-nav h1 {
 	color: var(--inset-highlight-color);
 	font-weight: 300;
+	position: relative;
+	top: -4.5rem;
 }
 
 .center-nav img {
@@ -121,6 +124,14 @@ header > * {
 	height: 10rem;
 	object-fit: cover;
 	clip-path: circle(at center);
+}
+
+a.left-nav {
+	text-decoration: none;
+}
+.logo {
+	height: 3rem;
+	margin-bottom: 0;
 }
 
 
